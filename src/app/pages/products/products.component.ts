@@ -19,97 +19,48 @@ export class ProductsComponent {
     {
       title: 'Sunset Over the Beach',
       description: 'A beautiful sunset over a calm beach.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img1.jpeg'
     },
     {
       title: 'Mountain Peaks',
       description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assets/image.1.jpeg'
+      imageUrl: 'assets/img2.jpeg'
     },
     {
       title: 'Forest Path',
       description: 'A peaceful path through a lush green forest.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img3.jpeg'
     },
     {
       title: 'Sunset Over the Beach',
       description: 'A beautiful sunset over a calm beach.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img4.jpeg'
     },
     {
       title: 'Mountain Peaks',
       description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img5.jpeg'
     },
     {
       title: 'Forest Path',
       description: 'A peaceful path through a lush green forest.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img6.jpeg'
     },
     {
       title: 'Sunset Over the Beach',
       description: 'A beautiful sunset over a calm beach.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img7.jpeg'
     },
     {
       title: 'Mountain Peaks',
       description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img8.jpeg'
     },
     {
       title: 'Forest Path',
       description: 'A peaceful path through a lush green forest.',
-      imageUrl: 'assert/image.1.jpeg'
+      imageUrl: 'assets/img9.jpeg'
     },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assert/image.1.jpeg'
-    }
+    
   ];
 }
