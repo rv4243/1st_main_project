@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* body {
+  background-color: #62696e;
+} */
+
+.container {
+  width: 30%;
+  margin: 0px auto;
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-gap: 25px;
+}
+.card{
+  background-color: #eee;
+  border-radius: 8px;
+  padding:20px;
+ }
+
+  .card img{
+    width: 100%;         /* Make image width 100% of the card */
+    height: auto;       /* Maintain aspect ratio */
+    object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  }
+  .card h2{
+  color:#0081d1;
+  font-size:28px;
+  }
