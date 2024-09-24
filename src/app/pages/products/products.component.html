@@ -1,7 +1,7 @@
 <mat-toolbar color="primary"> Product List </mat-toolbar>
 <div class="container responsive-grid">
   <mat-card *ngFor="let item of imageList" routerLink="home">
-    <img mat-card-image [src]="item.imageUrl" alt="{{ item.title }}" />
+    <img mat-card-image [src]="item.imageUrl" (click)="onCardClick(item.route)"/>
     <mat-card-header>
       <mat-card-title>{{ item.title }}</mat-card-title>
     </mat-card-header>
