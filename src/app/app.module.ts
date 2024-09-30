@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';  // Routing module (if you have one)
-import { RouterModule } from '@angular/router';  // Import RouterModule
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+// import { Card1PageComponent } from './card1-page/card1-page.component';
 
-import { DataService } from './service/data.service'; // Import your service
+import { DataService } from './service/data.service';
 
 
 @NgModule({
   declarations: [
-    // AppComponent
+
    ],
   imports: [
-    BrowserModule,  // Required for running the app in the browser
-    AppRoutingModule,  // Import your routing module if you have it
+    BrowserModule,
+    AppRoutingModule,
     RouterModule,
+    FormsModule
 
   ],
   providers:[DataService]

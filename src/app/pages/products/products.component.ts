@@ -1,85 +1,49 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-
-
-
+import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [MatButtonModule,MatCardModule,MatToolbarModule,CommonModule],
+  imports: [MatButtonModule,MatCardModule,MatToolbarModule,CommonModule, HttpClientModule],
   templateUrl: './products.component.html',
-  styleUrl: './products.component.css'
+  styleUrl: './products.component.css',
+  providers: [HttpClient]
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit {
+  imageList : Array<any> = [];
+  filteredList : Array<any> = [];
 
-  imageList = [
-    {
-      title: 'Sunset Over the Beach',
-      description: 'A beautiful sunset over a calm beach.',
-      imageUrl: 'assets/img1.jpeg',
-      route: '/card1'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assets/img2.jpeg',
-      route: '/card12'
-    },
-    {
-      title: 'Forest Path',
-      description: 'A peaceful path through a lush green forest.',
-      imageUrl: 'assets/img3.jpeg',
-      route: '/card3'
-    },
-    {
-      title: 'Sunset Over the Beach',
-      description: 'A beautiful sunset over a calm beach.',
-      imageUrl: 'assets/img4.jpeg',
-      route: '/card4'
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assets/img5.jpeg',
-      route: '/card4'
+  ngOnInit() {
+    this.getData();
+  }
 
-    },
-    {
-      title: 'Forest Path',
-      description: 'A peaceful path through a lush green forest.',
-      imageUrl: 'assets/img6.jpeg',
-      route: '/card4'
+  constructor(public router: Router,
+            public httpClient: HttpClient
+  ) { }
 
-    },
-    {
-      title: 'Sunset Over the Beach',
-      description: 'A beautiful sunset over a calm beach.',
-      imageUrl: 'assets/img7.jpeg',
-      route: '/card4'
+  getData() {
+    let url : string = '/assets/data/products.json';
+    this.httpClient.get(url).subscribe((data: any) => {
+      console.log(data);
+      this.imageList = (data && data.items && data.items.length > 0 ) ? data.items : [];
+      this.doFilter();
+    });
+  }
 
-    },
-    {
-      title: 'Mountain Peaks',
-      description: 'Snow-covered mountain peaks under a clear sky.',
-      imageUrl: 'assets/img8.jpeg',
-      route: '/card4'
-
-    },
-    {
-      title: 'Forest Path',
-      description: 'A peaceful path through a lush green forest.',
-      imageUrl: 'assets/img9.jpeg',
-      route: '/card4'
-
-    },
-    
-  ];
-  constructor(private router: Router) { }
+  doFilter(input: any = null) {
+    if(input) {
+      this.filteredList = (this.imageList && this.imageList.length > 0) ? this.imageList.filter((x:any) => {
+        return (x && x.gender === input) ? true : false;
+      }) : []
+    } else {
+      this.filteredList = this.imageList;
+    }
+  }
 
   onCardClick(route: string) {
     this.router.navigate([route]);

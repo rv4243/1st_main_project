@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { Card1PageComponent } from './card1-page/card1-page.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { ProductsComponent } from './pages/products/products.component';
     AboutComponent,
     ContactComponent,
     ProfileComponent,
-    ProductsComponent
+    ProductsComponent,
+    Card1PageComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
