@@ -13,6 +13,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 

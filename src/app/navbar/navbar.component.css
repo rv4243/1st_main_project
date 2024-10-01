@@ -36,6 +36,6 @@
   }
   
   /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
+  .topnav .i {
+    background-color: #ddd;
   }
