@@ -5,11 +5,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [MatButtonModule,MatCardModule,MatToolbarModule,CommonModule, HttpClientModule],
+  imports: [MatButtonModule,MatCardModule,MatToolbarModule,CommonModule, HttpClientModule,MatListModule,MatSidenavModule],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
   providers: [HttpClient]

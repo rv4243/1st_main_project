@@ -12,11 +12,14 @@ import { Card4PageComponent } from './card4-page/card4-page.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  {path : '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent },
   { path: 'card1', component: Card1PageComponent },
   { path: 'card2', component: Card2PageComponent },
   { path: 'card3', component: Card3PageComponent },
-  { path: 'card4', component: Card4PageComponent }
+  { path: 'card4', component: Card4PageComponent },
+  {path : '**', component: HomeComponent},
+
 ];
 
 

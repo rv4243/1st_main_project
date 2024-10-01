@@ -6,7 +6,14 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { Card1PageComponent } from './card1-page/card1-page.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
+import { ProductItemComponent } from './product-item/product-item.component'
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -17,8 +24,15 @@ import { Card1PageComponent } from './card1-page/card1-page.component';
     ContactComponent,
     ProfileComponent,
     ProductsComponent,
-    Card1PageComponent
-  ],
+    Card1PageComponent,
+    NavbarComponent,
+    SidenavComponent,
+    ProductItemComponent,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
