@@ -5,7 +5,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { Card1PageComponent } from './card1-page/card1-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -24,7 +23,6 @@ import { ProductItemComponent } from './product-item/product-item.component'
     ContactComponent,
     ProfileComponent,
     ProductsComponent,
-    Card1PageComponent,
     NavbarComponent,
     SidenavComponent,
     ProductItemComponent,

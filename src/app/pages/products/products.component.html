@@ -5,10 +5,17 @@
     <mat-sidenav mode="side" opened>
     <mat-nav-list>
       <div class="sidebar">
-        <button mat-button (click)="doFilter('men')">Jewellery</button>
-        <button mat-button (click)="doFilter('women')">Nighty</button>
-        <button mat-button (click)="doFilter('men')">Saree</button>
-        <button mat-button (click)="doFilter('women')">Sudi</button> 
+        <i class="bi bi-house-door-fill"></i>
+        <button mat-button (click)="doFilter('men')" id="jwell">Jewellery</button>
+        <button mat-button (click)="doFilter('women')" id="nighty">Nighty</button>
+        <button mat-button (click)="doFilter('men')" id="saree">Saree</button>
+        <button mat-button (click)="doFilter('women')" id="sudi">Sudi</button> 
+        <!-- <div id="mySidenav" class="sidenav">
+          <a href="#" id="about">About</a>
+          <a href="#" id="blog">Blog</a>
+          <a href="#" id="projects">Projects</a>
+          <button (click)="doFilter('women')"id="contact" >Contact</button>
+        </div> -->
 
         
       </div>
