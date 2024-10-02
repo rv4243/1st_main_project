@@ -2,13 +2,16 @@
     position: fixed; /* Makes the navbar fixed */
     top: 0;          /* Sticks the navbar to the top of the viewport */
     width: 100%;     /* Ensures the navbar takes up the full width */
-    z-index: 1000; 
+    z-index: 1; 
     background-color: black;  /* Ensures the navbar stays above other content */
   }
   .topnav {
-    background-color: #333;
+    background-color: rgb(246, 184, 51);
     overflow: hidden;
-    padding-left: 00px;
+    padding-top: 15px;
+    padding-left: 500px;
+    height: 85px;
+    width: 100%;
     
   }
   
@@ -20,12 +23,11 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
     color: black;
   }
   

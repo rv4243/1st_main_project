@@ -144,3 +144,6 @@ div.content {
   top: 200px;
   background-color: #dfd111 /* Light Black */
 }
+mat-sidenav-container {
+  background-color: whitesmoke;
+}

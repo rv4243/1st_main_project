@@ -1,34 +1,14 @@
 <mat-sidenav-container class="sidenav-container">
-   
-  
-  
-    <mat-sidenav mode="side" opened>
+  <mat-sidenav mode="side" opened>
     <mat-nav-list>
-      <div class="sidebar">
+  
+      <app-sidenav>
         
-        <button mat-button (click)="doFilter('men')" id="jwell">Jewellery</button>
-        <button mat-button (click)="doFilter('women')" id="nighty">Nighty</button>
-        <button mat-button (click)="doFilter('men')" id="saree">Saree</button>
-        <button mat-button (click)="doFilter('women')" id="sudi">Sudi</button> 
-        <!-- <div id="mySidenav" class="sidenav">
-          <a href="#" id="about">About</a>
-          <a href="#" id="blog">Blog</a>
-          <a href="#" id="projects">Projects</a>
-          <button (click)="doFilter('women')"id="contact" >Contact</button>
-        </div> -->
+      </app-sidenav>
+    
+  </mat-nav-list>
+  </mat-sidenav>
 
-        
-      </div>
-      <!-- <a mat-list-item (click)="doFilter('men')">Home</a>
-      <a mat-list-item href="/about">About</a>
-      <a mat-list-item href="/product">Product</a>
-      <a mat-list-item href="/contact">Contact</a>
-      <button mat-button (click)="doFilter('men')">Mens</button>
-<button mat-button (click)="doFilter('women')">Women</button> -->
-    </mat-nav-list>
-  </mat-sidenav> 
-<button mat-button (click)="doFilter('men')">Mens</button>
-<button mat-button (click)="doFilter('women')">Women</button>
 <mat-sidenav-content>
 <div class="container responsive-grid">
   <mat-card *ngFor="let item of filteredList" routerLink="home">

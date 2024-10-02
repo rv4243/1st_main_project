@@ -7,13 +7,14 @@ import { Router } from '@angular/router';
 import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { SidenavComponent } from "../../sidenav/sidenav.component";
 
 
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [MatButtonModule,MatCardModule,MatToolbarModule,CommonModule, HttpClientModule,MatListModule,MatSidenavModule],
+  imports: [MatButtonModule, MatCardModule, MatToolbarModule, CommonModule, HttpClientModule, MatListModule, MatSidenavModule, SidenavComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
   providers: [HttpClient]
