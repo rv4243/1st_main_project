@@ -14,7 +14,10 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 
@@ -50,9 +53,10 @@ const routes: Routes = [
     FormsModule,
     NavbarComponent,
     SidenavComponent,
-    AppComponent, 
+    AppComponent,
     NavbarComponent,
-    ProductsComponent, 
+    ProductsComponent,
+    ProfileComponent,
     RouterModule.forRoot(routes),
     
     
