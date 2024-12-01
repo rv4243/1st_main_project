@@ -6,6 +6,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component'
+import { AuthGuard } from './auth.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -20,6 +22,7 @@ export const routes: Routes = [
   {path: 'product', component:ProductsComponent},
   {path: 'product/:id', component:ProductItemComponent},
   {path: 'cart', component:CartComponent},
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
 
   {path : '**', component: HomeComponent},
 

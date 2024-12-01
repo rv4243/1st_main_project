@@ -1,9 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-signin',
-  templateUrl: './signin.component.html'
+  standalone: true,
+  templateUrl: './signin.component.html',
+  imports: [CommonModule]
 })
 export class SigninComponent {
   user = {

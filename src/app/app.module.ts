@@ -10,17 +10,35 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './pages/home/home.component';
+import { CartComponent } from './pages/cart/cart.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductItemComponent } from './product-item/product-item.component';
 import { enableProdMode } from '@angular/core';
 import { CartService } from './services/cart.service'; // Import the service
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EmpAddEditComponent } from './pages/dashboard/emp-add-edit/emp-add-edit.component';
+
+
+
+
 
 
 
@@ -39,25 +57,27 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'about', component: AboutComponent },
 ];
-if (environment.production) {
-  enableProdMode();
-}
+// if (environment.production) {
+//   enableProdMode();
+// }
 
 @NgModule({
   declarations: [
-    
-    
-    
+
+
+
 
    ],
   imports: [
     MatToolbarModule,
-    HttpClientModule
+    NgbModule,
+    HttpClientModule,
     MatButtonModule,
     MatIconModule,
     MatInputModule,
     MatMenuModule,
     BrowserModule,
+    SidenavComponent,
     AppRoutingModule,
     RouterModule,
     FormsModule,
@@ -67,6 +87,23 @@ if (environment.production) {
     NavbarComponent,
     ProductsComponent,
     ProfileComponent,
+
+    MatSnackBarModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatTableModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+
+
+
+
     RouterModule.forRoot([
       {path: 'home',component:HomeComponent},
       {path: 'about', component:AboutComponent},
@@ -78,14 +115,14 @@ if (environment.production) {
 
       {path : '**', component: HomeComponent},
        // Example route
-    ])     
-    
-    
-    
+    ])
+
+
+
 
   ],
   providers:[DataService,CartService]
-  bootstrap: [] 
+  // bootstrap: []
 })
 export class AppModule { }
 

@@ -12,7 +12,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { CartComponent } from './pages/cart/cart.component';
-
 import { ProductItemComponent } from './product-item/product-item.component'
 @Component({
   selector: 'app-root',
@@ -38,4 +37,10 @@ import { ProductItemComponent } from './product-item/product-item.component'
 })
 export class AppComponent {
   title = 'FirstApp';
+
+
+  isLoggedIn(): boolean {
+    return localStorage.getItem('isLoggedIn') === 'true';
+  }
+
 }
